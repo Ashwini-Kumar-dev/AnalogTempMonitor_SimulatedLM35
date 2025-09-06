@@ -1,0 +1,26 @@
+explanation.txt
+===============
+
+Step-by-Step Simulation Guide (SimulIDE)
+
+1) Search for "UNO" and drag the Arduino UNO board into the workspace.
+
+2) Search for "Potentiometer" and place it near the Arduino.
+
+   Connections:
+   - Left Pin   → GND (for ground reference)
+   - Middle Pin → A0 or A1 (connect to any analog pin for signal input)
+   - Right Pin  → 5V (for power supply)
+
+3) Search for "LCD" and drag the 16x2 LCD component into the workspace.
+
+4) Click on the LCD to open its settings.
+
+5) Select "Attach" to connect the LCD to the Arduino pins.
+
+Explanation:
+------------
+The middle pin of the potentiometer outputs a variable voltage between 0V and 5V depending on the knob position.
+Arduino reads this voltage using analogRead(A0), converting it to a digital value between 0 and 1023.
+This value can be displayed on the LCD or used to control other outputs like LEDs, buzzers, or motors.
+

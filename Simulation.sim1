@@ -1,0 +1,23 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="LcdShield-3" mainComp="false" Show_id="true" Show_Val="false" Pos="12,0" rotation="0" hflip="1" vflip="1" label="LcdShield-3" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" BoardId="Uno-1" />
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-176,-124" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="7.12794,-6.29242" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="AnalogTempMonitor_SimulatedLM35.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Potentiometer" CircId="Potentiometer-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="96,-52" rotation="0" hflip="1" vflip="1" label="Potentiometer-2" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1 kΩ" Value_Ohm="289 Ω" Slider="false" Scale="1" />
+
+<item itemtype="Node" CircId="Node-4" mainComp="false" Pos="-24,-68" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Potentiometer-2-PinA" endpinid="Uno-1-GND0" pointList="80,-52,12,-52,12,-44,-24,-44" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Potentiometer-2-PinB" endpinid="Uno-1-5V0" pointList="112,-52,112,-28,-24,-28" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Node-4-1" endpinid="Uno-1-A1" pointList="-24,-68,-24,-76" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Potentiometer-2-PinM" endpinid="Node-4-0" pointList="96,-36,20,-36,20,-68,-24,-68" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Node-4-2" endpinid="Uno-1-A0" pointList="-24,-68,-24,-68" />
+
+</circuit>
